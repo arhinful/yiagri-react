@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+}
+
+.yiagri-img-home{
+    width: 200px;
+    height: 250px;
+    margin-top: -90px;
+}
