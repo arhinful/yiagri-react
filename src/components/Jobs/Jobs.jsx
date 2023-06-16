@@ -3,7 +3,9 @@ import {withCookies} from "react-cookie";
 import {Button, Col, Form, Row} from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import StableCards from "./StableCards";
-import MovingCards from "./MovingCards";
+import CarouselComponent from "./CarouselComponent";
+import FeaturedJobCategories from "./FeaturedJobCategories";
+import JobsComponent from "./JobsComponent";
 
 const Jobs = (props)=>{
     return(
@@ -21,7 +23,19 @@ const Jobs = (props)=>{
 
                 <StableCards/>
 
-                <MovingCards/>
+                <CarouselComponent/>
+
+                <div className="text-center featured-job-header mb-4">
+                    <h1>Featured Job Categories</h1>
+                    <div>
+                        Who are in extremely love with eco friendly system.
+                    </div>
+                </div>
+
+                <FeaturedJobCategories/>
+
+                <JobsComponent/>
+
             </div>
         </>
     )

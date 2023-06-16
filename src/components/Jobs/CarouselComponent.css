@@ -35,5 +35,7 @@
 }
 
 .slider-buttons{
-
+    padding: 0.2px 20px;
+    background: #006048;
+    color: white;
 }

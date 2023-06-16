@@ -1,0 +1,12 @@
+
+.icon-container{
+    max-width: 170px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+}
+
+.icon-container:hover{
+    max-width: 170px;
+    background: #eeeeee;
+    border: 1px solid #007A5E;
+}

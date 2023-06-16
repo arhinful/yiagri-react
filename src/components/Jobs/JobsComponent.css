@@ -1,0 +1,12 @@
+
+.card-top-buttons {
+    padding: 3px 23px;
+    border: 1px solid #dadada;
+    background: #f1f1f1;
+}
+
+.card-top-buttons:hover{
+    background: #007A5E;
+    border: 1px solid #007A5E;
+    color: white;
+}
