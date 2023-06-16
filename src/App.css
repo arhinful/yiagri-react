@@ -39,5 +39,14 @@ span {
 }
 
 .default-button{
-
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  border-radius: 50px;
+  display: flex;
+  background: #007A5E;
+  color: white;
+  border: solid 1px #007A5E;
 }

@@ -31,7 +31,7 @@ const Jobs = (props)=>{
                                 </select>
                             </Col>
                             <Col>
-                                <Button type="submit" className="button-primary outline-none">SEARCH</Button>
+                                <Button type="submit" className="button-primary default-button">SEARCH</Button>
                             </Col>
                         </Row>
                     </Form>
