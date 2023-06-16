@@ -19,6 +19,7 @@ import NetworkLeft from "./components/Network/NetworkLeft";
 import UserContext from "./components/userContext";
 import OtherUserProfile from "./components/Profile/OtherUserProfile";
 import ProfileRight from "./components/Profile/ProfileRight";
+import Jobs from "./components/Jobs/Jobs";
 
 class App extends Component {
   constructor(props) {
@@ -93,20 +94,30 @@ class App extends Component {
                         component={(props) => <OtherUserProfile {...props} />}
                       />
                       <Route
-                        exact
-                        path="/activity"
-                        component={(props) => (
-                          <React.Fragment>
-                            <ActivityLeft {...props} />
-                            <ActivityMain {...props} />
-                          </React.Fragment>
-                        )}
+                          exact
+                          path="/activity"
+                          component={(props) => (
+                              <React.Fragment>
+                                <ActivityLeft {...props} />
+                                <ActivityMain {...props} />
+                              </React.Fragment>
+                          )}
                       />
 
                       <Route exact path="/network">
                         <NetworkLeft />
                         <Network updateNework={this.updateNework} />
                       </Route>
+
+                      <Route
+                          exact
+                          path="/jobs"
+                          component={(props)=> (
+                              <Jobs/>
+                          )}
+                      >
+                      </Route>
+
                     </div>
                   </div>
                 </Route>

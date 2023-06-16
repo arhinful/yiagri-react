@@ -28,3 +28,16 @@ span {
     Lucida Grande, Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
+
+.outline-none{
+  outline: none;
+  box-shadow: none !important
+}
+.outline-none :active {
+  outline: none;
+  box-shadow: none !important
+}
+
+.default-button{
+
+}

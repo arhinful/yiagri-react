@@ -175,8 +175,7 @@ class Header extends Component {
                 <Link
                   data-tip
                   data-for="registerTip"
-                  onClick={(event) => event.preventDefault()}
-                  to={"/"}
+                  to={"/jobs"}
                 >
                   <img
                     src="/images/nav-jobs.svg"
