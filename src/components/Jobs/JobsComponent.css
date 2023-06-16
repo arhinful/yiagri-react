@@ -1,3 +1,6 @@
+.main-container{
+    margin-top: 100px;
+}
 
 .card-top-buttons {
     padding: 3px 23px;
@@ -9,4 +12,10 @@
     background: #007A5E;
     border: 1px solid #007A5E;
     color: white;
+}
+
+.card-container{
+    border-radius: 3px;
+    padding: 20px;
+    background: #f8f8f8;
 }
