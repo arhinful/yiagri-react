@@ -1,29 +1,58 @@
 import "./MovingCards.css"
 import {withCookies} from "react-cookie";
-import {Button, Col, Row} from "react-bootstrap";
+import {Button, Col, Image, Row} from "react-bootstrap";
 
 const MovingCards = ()=>{
     return(
         <>
-            <Row className="mt-5" noGutters={false}>
-                <Col lg={6} className="bg-dark p-3">
+            <Row className="mt-5">
+                <Col className="bg-dark p-3 m-2">
                     <div className="text-white">
                         <h5>Creative Designer</h5>
                     </div>
                     <div>
                         <h6 className="font-weight-bolder second-header">Los Angeles</h6>
                     </div>
-                    <Row className="card-content">
-                        <Col xs={2}>
-                            <Button className="font-weight-lighter view-job-button" size="sm">
-                                VIEW JOB POST
-                            </Button>
-                        </Col>
-                        <Col xs={9}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores at
-                            cupiditate delectus ex excepturi exercitationem fugit impedit in libero perspiciatis quas.
-                        </Col>
-                    </Row>
+                    <div className="card-content">
+                        <Row>
+                            <Col xs={2} className="pt-2">
+                                <Image width={70} src="/joblogo.png"/>
+                            </Col>
+                            <Col>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores at
+                                cupiditate delectus ex excepturi exercitationem fugit impedit in libero perspiciatis quas.
+                            </Col>
+                        </Row>
+                        <Button className="font-weight-lighter default-button mt-3" size="sm">
+                            VIEW JOB POST
+                        </Button>
+                    </div>
+                </Col>
+                <Col className="bg-dark p-3 m-2">
+                    <div className="text-white">
+                        <h5>Creative Designer</h5>
+                    </div>
+                    <div>
+                        <h6 className="font-weight-bolder second-header">Los Angeles</h6>
+                    </div>
+                    <div className="card-content">
+                        <Row>
+                            <Col xs={2} className="pt-2">
+                                <Image width={70} src="/joblogo.png"/>
+                            </Col>
+                            <Col>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores at
+                                cupiditate delectus ex excepturi exercitationem fugit impedit in libero perspiciatis quas.
+                            </Col>
+                        </Row>
+                        <Button className="font-weight-lighter default-button mt-3" size="sm">
+                            VIEW JOB POST
+                        </Button>
+                    </div>
+                </Col>
+
+                <Col xs={12} className="text-center">
+                    <span className="slider-buttons">ds</span>
                 </Col>
             </Row>
         </>

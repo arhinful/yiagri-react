@@ -6,3 +6,34 @@
 .second-header{
     color: aqua;
 }
+
+.view-job-button{
+    
+}
+
+.view-job-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    border-radius: 0;
+    display: flex;
+    background: #007A5E;
+    color: white;
+    border: solid 1px #007A5E;
+    outline: none;
+    font-size: 7px;
+}
+
+.view-job-button:hover,.view-job-button:focus,.view-job-button:active,
+.view-job-button:active:focus:not(:disabled):not(.disabled),
+.view-job-button:focus, .view-job-button:active, .view-job-button:hover{
+    background: #006048;
+    color: white;
+    border: solid 1px #006048;
+    outline: none;
+    box-shadow: none;
+}
+
+.slider-buttons{
+
+}
