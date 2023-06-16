@@ -1,9 +1,16 @@
 
-.button-primary{
-    background: #007A5E;
-    border: none;
-}
-.button-primary:hover{
+.search-button:active{
     background-color: #006750;
 }
 
+.looking-for{
+    min-width: 250px;
+}
+
+.selected-area{
+    min-width: 200px;
+}
+
+.all-categories{
+    min-width: 200px;
+}

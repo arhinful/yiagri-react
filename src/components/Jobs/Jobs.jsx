@@ -10,28 +10,27 @@ const Jobs = (props)=>{
                     <h2>1500+ Jobs posted last week</h2>
                 </div>
 
-                <div className="border p-3 mt-5 w-100">
+                <div className="border p-4 mt-5">
                     <Form>
                         <Row>
                             <Col>
                                 <Form.Control
-                                    className="outline-none"
-                                    style={{width: "300px"}}
+                                    className="outline-none looking-for"
                                     placeholder="what are you looking for?"
                                 />
                             </Col>
                             <Col>
-                                <select className="form-control outline-none">
+                                <select className="form-control outline-none selected-area">
                                     <option selected>Select area</option>
                                 </select>
                             </Col>
                             <Col>
-                                <select className="form-control">
+                                <select className="form-control all-categories outline-none">
                                     <option selected>All categories</option>
                                 </select>
                             </Col>
                             <Col>
-                                <Button type="submit" className="button-primary default-button">SEARCH</Button>
+                                <Button type="submit" className="search-button default-button outline-none">SEARCH</Button>
                             </Col>
                         </Row>
                     </Form>
