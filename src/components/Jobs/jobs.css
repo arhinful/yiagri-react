@@ -14,3 +14,11 @@
 .all-categories{
     min-width: 200px;
 }
+
+.form-container{
+    background: #eaeaea;
+}
+
+.cards-container{
+    margin-top: 100px;
+}

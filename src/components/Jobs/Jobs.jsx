@@ -10,7 +10,7 @@ const Jobs = (props)=>{
                     <h2>1500+ Jobs posted last week</h2>
                 </div>
 
-                <div className="border p-4 mt-5">
+                <div className="border p-4 mt-5 form-container">
                     <Form>
                         <Row>
                             <Col>
@@ -35,6 +35,37 @@ const Jobs = (props)=>{
                         </Row>
                     </Form>
                 </div>
+
+                <div className="text-center mt-4">
+                    <span>Search by tags: Tecnology, Business, Consulting, IT Company, Design, Development</span>
+                </div>
+
+                <Row className="cards-container">
+                    <Col className="card m-3 p-4 border-0 text-center">
+                        <div>
+                            <h5>Searching</h5>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </Col>
+                    <Col className="card m-3 p-4 border-0 text-center">
+                        <div>
+                            <h5>Applying</h5>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </Col>
+                    <Col className="card m-3 p-4 border-0 text-center">
+                        <div>
+                            <h5>Security</h5>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </Col>
+                    <Col className="card m-3 p-4 border-0 text-center">
+                        <div>
+                            <h5>Notifications</h5>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </Col>
+                </Row>
             </div>
         </>
     )
