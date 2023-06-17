@@ -2,6 +2,7 @@ import "./JobCard.css"
 import {withCookies} from "react-cookie";
 import {Col, Image, Row, Stack} from "react-bootstrap";
 import {BsDatabase, BsHeart, BsMap} from "react-icons/bs";
+import {Link} from "react-router-dom";
 
 const JobCard = ()=>{
     return(
@@ -23,14 +24,19 @@ const JobCard = ()=>{
                             <Col xs={9}>
                                 <Stack direction="horizontal" gap={3}>
                                     <div className="text-start">
-                                        <h5>Creative Art Design</h5>
+                                        <Link to="jobs/1" className="text-decoration-none">
+                                            <h5>Creative Art Design</h5>
+                                        </Link>
+
                                         <span>Premium Labels Limited</span>
                                     </div>
                                     <div className="ms-auto">
                                         <button className="card-right-buttons fs-15 mr-2">
                                             <BsHeart/>
                                         </button>
-                                        <button className="card-right-buttons fs-15">APPLY</button>
+                                        <Link to="jobs/1">
+                                            <button className="card-right-buttons fs-15">APPLY</button>
+                                        </Link>
                                     </div>
                                 </Stack>
                                 <div className="my-2 job-content fs-15">

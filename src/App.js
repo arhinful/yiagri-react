@@ -20,6 +20,7 @@ import UserContext from "./components/userContext";
 import OtherUserProfile from "./components/Profile/OtherUserProfile";
 import ProfileRight from "./components/Profile/ProfileRight";
 import Jobs from "./components/Jobs/Jobs";
+import JobDetails from "./components/Jobs/JobDetails";
 
 class App extends Component {
   constructor(props) {
@@ -117,6 +118,7 @@ class App extends Component {
                           )}
                       >
                       </Route>
+                      <Route exact path="/jobs/:jobId" component={(props)=>(<JobDetails/>)}></Route>
 
                     </div>
                   </div>

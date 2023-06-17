@@ -1,0 +1,11 @@
+.card-data{
+    color: #626262;
+    line-height: 25px;
+}
+
+.bullet{
+    padding: 0 8px;
+    background: #019a74;
+    margin-right: 7px;
+    font-size: 12px;
+}
