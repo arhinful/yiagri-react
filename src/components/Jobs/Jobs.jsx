@@ -1,6 +1,5 @@
 import "./Jobs.css"
 import {withCookies} from "react-cookie";
-import {Button, Col, Form, Row} from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import StableCards from "./StableCards";
 import CarouselComponent from "./CarouselComponent";
@@ -11,7 +10,7 @@ const Jobs = (props)=>{
     return(
         <>
             <div className="mt-5 mb-5">
-                <div className="text-center">
+                <div className="text-center mt-5">
                     <h2>1500+ Jobs posted last week</h2>
                 </div>
 
@@ -25,7 +24,7 @@ const Jobs = (props)=>{
 
                 <CarouselComponent/>
 
-                <div className="text-center featured-job-header mb-4">
+                <div className="text-center featured-job-header mb-5">
                     <h1>Featured Job Categories</h1>
                     <div>
                         Who are in extremely love with eco friendly system.

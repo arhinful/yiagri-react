@@ -7,8 +7,8 @@ const CarouselComponent = ()=>{
         <>
             <Row className="mt-5">
                 <Col className="bg-dark p-3 m-2">
-                    <div className="text-white">
-                        <h5>Creative Designer</h5>
+                    <div>
+                        <h5 className="text-white">Creative Designer</h5>
                     </div>
                     <div>
                         <h6 className="font-weight-bolder second-header">Los Angeles</h6>
@@ -29,8 +29,8 @@ const CarouselComponent = ()=>{
                     </div>
                 </Col>
                 <Col className="bg-dark p-3 m-2">
-                    <div className="text-white">
-                        <h5>Creative Designer</h5>
+                    <div>
+                        <h5 className="text-white">Creative Designer</h5>
                     </div>
                     <div>
                         <h6 className="font-weight-bolder second-header">Los Angeles</h6>

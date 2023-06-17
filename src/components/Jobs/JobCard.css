@@ -1,3 +1,9 @@
+.card-container{
+    border-radius: 3px;
+    padding: 40px 20px;
+    background: #f8f8f8;
+    font-size: 15px;
+}
 
 .card-right-buttons {
     padding: 3px 23px;
@@ -22,4 +28,11 @@
     background: #007A5E;
     border: 1px solid #007A5E;
     color: white;
+}
+
+.job-content, .job-info{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
+    Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Lucida Grande, Helvetica, Arial, sans-serif;
 }

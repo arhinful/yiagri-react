@@ -1,0 +1,18 @@
+.widget-card{
+    border-radius: 3px;
+    padding: 25px 20px;
+    background: #f8f8f8;
+}
+
+.location-buttons{
+    border: none;
+    width: 100%;
+    padding: 8px 25px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.location-buttons:hover{
+    background: #00624b;
+    color: white;
+}

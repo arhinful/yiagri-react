@@ -1,7 +1,8 @@
 import "./JobsComponent.css"
 import {withCookies} from "react-cookie";
-import {Col, Image, Row, Stack} from "react-bootstrap";
+import {Col, Row, Stack} from "react-bootstrap";
 import JobCard from "./JobCard";
+import RightSideWidget from "./RightSideWidget";
 
 const JobsComponent = ()=>{
     return(
@@ -12,7 +13,7 @@ const JobsComponent = ()=>{
                     <Col lg={8}>
                         <Row>
                             <Col xs={12}>
-                                <Stack direction="horizontal" gap={3}>
+                                <Stack direction="horizontal">
                                     <div className="p-2 ms-auto">
                                         <button className="card-top-buttons">RECENT</button>
                                     </div>
@@ -28,11 +29,18 @@ const JobsComponent = ()=>{
                                 </Stack>
                             </Col>
                             <JobCard/>
+                            <JobCard/>
+                            <JobCard/>
+                            <JobCard/>
+
+                            <Col className="mt-4">
+                                <button className="default-button" style={{paddingTop: 7, paddingBottom: 7}}>Load More</button>
+                            </Col>
                         </Row>
 
                     </Col>
                     <Col lg={4}>
-
+                        <RightSideWidget/>
                     </Col>
                 </Row>
 

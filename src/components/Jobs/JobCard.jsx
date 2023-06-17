@@ -1,6 +1,7 @@
 import "./JobCard.css"
 import {withCookies} from "react-cookie";
 import {Col, Image, Row, Stack} from "react-bootstrap";
+import {BsDatabase, BsHeart, BsMap} from "react-icons/bs";
 
 const JobCard = ()=>{
     return(
@@ -14,34 +15,36 @@ const JobCard = ()=>{
                                     <Image src="/yiagri.png" width={80}/>
                                 </div>
                                 <div>
-                                    <button className="card-buttons mb-2">Art</button>
-                                    <button className="card-buttons mb-2">Media</button>
-                                    <button className="card-buttons mb-2">Design</button>
+                                    <button className="card-buttons fs-15 mb-2">Art</button>
+                                    <button className="card-buttons fs-15 mb-2">Media</button>
+                                    <button className="card-buttons fs-15 mb-2">Design</button>
                                 </div>
                             </Col>
                             <Col xs={9}>
                                 <Stack direction="horizontal" gap={3}>
-                                    <div className="p-2 text-start">
-                                        <h4>Creative Art Design</h4>
+                                    <div className="text-start">
+                                        <h5>Creative Art Design</h5>
                                         <span>Premium Labels Limited</span>
                                     </div>
-                                    <div className="p-2 ms-auto">
-                                        <button className="card-right-buttons mr-2">FU</button>
-                                        <button className="card-right-buttons">APPLY</button>
+                                    <div className="ms-auto">
+                                        <button className="card-right-buttons fs-15 mr-2">
+                                            <BsHeart/>
+                                        </button>
+                                        <button className="card-right-buttons fs-15">APPLY</button>
                                     </div>
                                 </Stack>
-                                <div className="my-2">
+                                <div className="my-2 job-content fs-15">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                     eiusmod temporinc ididunt ut dolore magna aliqua.
                                 </div>
-                                <div className="my-2">
+                                <div className="my-2 job-info fs-15">
                                     Job Nature: Full time
                                 </div>
-                                <div className="my-2">
-                                    56/8, Panthapath Dhanmondi Dhaka
+                                <div className="my-2 job-info fs-15">
+                                    <BsMap/> 56/8, Panthapath Dhanmondi Dhaka
                                 </div>
-                                <div className="my-2">
-                                    15k - 25k
+                                <div className="my-2 job-info fs-15">
+                                    <BsDatabase/> 15k - 25k
                                 </div>
                             </Col>
                         </Row>
