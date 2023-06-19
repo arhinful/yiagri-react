@@ -21,6 +21,7 @@ import OtherUserProfile from "./components/Profile/OtherUserProfile";
 import ProfileRight from "./components/Profile/ProfileRight";
 import Jobs from "./components/Jobs/Jobs";
 import JobDetails from "./components/Jobs/JobDetails";
+import Messages from "./components/Message/Messages";
 
 class App extends Component {
   constructor(props) {
@@ -116,9 +117,21 @@ class App extends Component {
                           component={(props)=> (
                               <Jobs/>
                           )}
-                      >
-                      </Route>
-                      <Route exact path="/jobs/:jobId" component={(props)=>(<JobDetails/>)}></Route>
+                      />
+                      <Route
+                          exact
+                          path="/jobs/:jobId"
+                          component={(props)=>(
+                              <JobDetails/>
+                          )}
+                      />
+                      <Route
+                          exact
+                          path="/messages"
+                          component={(props)=>(
+                              <Messages/>
+                          )}
+                      />
 
                     </div>
                   </div>

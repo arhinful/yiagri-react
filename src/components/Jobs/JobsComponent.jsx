@@ -3,6 +3,7 @@ import {withCookies} from "react-cookie";
 import {Col, Row, Stack} from "react-bootstrap";
 import JobCard from "./JobCard";
 import RightSideWidget from "./RightSideWidget";
+import categories from "../../Models/categories";
 
 const JobsComponent = ()=>{
     return(
@@ -28,10 +29,12 @@ const JobsComponent = ()=>{
                                     </div>
                                 </Stack>
                             </Col>
-                            <JobCard/>
-                            <JobCard/>
-                            <JobCard/>
-                            <JobCard/>
+
+                            {
+                                categories.slice(0, 5).map((category, index)=>(
+                                    <JobCard title={category.profession}/>
+                                ))
+                            }
 
                             <Col className="mt-4">
                                 <button className="default-button" style={{paddingTop: 7, paddingBottom: 7}}>Load More</button>

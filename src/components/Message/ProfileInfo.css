@@ -1,0 +1,45 @@
+
+.profile-info-container{
+    margin-left: 30px;
+    background: white;
+    width: 300px;
+    cursor: pointer;
+    border: none;
+}
+
+.profile-info-image{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.profile-info-image-square{
+    width: 70px;
+    height: 70px;
+}
+
+.boost-job-search{
+    font-size: 13px;
+    color: #7c7c7c;
+}
+
+.see-who{
+    color: #363636;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.try-for-free-button{
+    border-radius: 16px;
+    background: transparent;
+    /*padding: 3px 15px;*/
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+    font-size: 15px;
+    font-weight: 600;
+    height: 32px;
+    line-height: calc(32px - 1px * 2);
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+}

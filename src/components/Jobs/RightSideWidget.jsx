@@ -2,31 +2,10 @@ import "./RightSideWidget.css"
 import {withCookies} from "react-cookie";
 import {Col, Row, Stack} from "react-bootstrap";
 import {BsDatabase, BsMap} from "react-icons/bs";
+import categories from "../../Models/categories";
+import cities from "../../Models/cities";
 
 const RightSideWidget = ()=>{
-
-    const categories = [
-        "Agronomists",
-        "Horticulturists",
-        "Animal scientists",
-        "Agricultural engineers",
-        "Agricultural economists",
-        "Agricultural Extensionists",
-        "Food scientists",
-        "Agricultural researchers",
-        "Agribusiness professionals",
-        "Environmental scientists and conservationist"
-    ]
-
-    const cities = [
-        "Cape Coast",
-        "Sunyani",
-        "Takoradi",
-        "Tamale",
-        "Accra",
-        "Koforidua",
-        "Kumasi"
-    ]
 
     return(
         <>
@@ -37,7 +16,7 @@ const RightSideWidget = ()=>{
                     <Row>
                         {cities.map((city) => {
                             return(
-                                <Col xs={12}>
+                                <Col xs={12} key={city}>
                                     <button className="location-buttons">
                                         <Stack direction="horizontal" gap={2}>
                                             <div className="text-start">{city}</div>
@@ -58,7 +37,7 @@ const RightSideWidget = ()=>{
                                 <img className="d-block w-100" src="/toprated.jpg" alt="First slide"/>
                             </div>
                             <div className="mt-3 mb-2 fs-15">
-                                <h5>Creative Art Designer</h5>
+                                <h5>{categories[5].profession}</h5>
                                 <span>Premium Labels Limited</span>
                             </div>
 
@@ -84,10 +63,10 @@ const RightSideWidget = ()=>{
                     <Row>
                         {categories.map((category) => {
                             return(
-                                <Col xs={12}>
+                                <Col xs={12} key={category.field}>
                                     <button className="location-buttons">
                                         <Stack direction="horizontal" gap={2}>
-                                            <div className="text-start">{category}</div>
+                                            <div className="text-start">{category.profession}</div>
                                             <div className="ms-auto">37</div>
                                         </Stack>
                                     </button>

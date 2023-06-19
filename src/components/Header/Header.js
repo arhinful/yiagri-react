@@ -168,25 +168,21 @@ class Header extends Component {
               </ReactTooltip>
 
               <NavList
-              // className={
-              //   window.location.pathname.slice(1) == "/#" ? "active" : null
-              // }
+                className={
+                  window.location.pathname.slice(1) === "jobs"
+                      ? "active"
+                      : null
+                }
               >
                 <Link
-                  data-tip
-                  data-for="registerTip"
                   to={"/jobs"}
+                  onClick={this.thisClicked}
                 >
                   <img
                     src="/images/nav-jobs.svg"
-                    data-tip
-                    data-for="registerTip"
                     alt=""
                   />
                   <span
-                    onClick={this.thisClicked}
-                    data-tip
-                    data-for="registerTip"
                   >
                     Jobs
                   </span>
@@ -194,23 +190,21 @@ class Header extends Component {
               </NavList>
 
               <NavList
-              // className={
-              //   window.location.pathname.slice(1) == "/#" ? "active" : null
-              // }
+              className={
+                window.location.pathname.slice(1) === "messages"
+                    ? "active"
+                    : null
+              }
               >
                 <Link
-                  data-tip
-                  data-for="registerTip"
-                  onClick={(event) => event.preventDefault()}
-                  to={"/"}
+                  to={"/messages"}
+                  onClick={this.thisClicked}
                 >
                   <img
                     src="/images/nav-messaging.svg"
-                    data-tip
-                    data-for="registerTip"
                     alt=""
                   />
-                  <span data-tip data-for="registerTip">
+                  <span>
                     Messaging
                   </span>
                 </Link>

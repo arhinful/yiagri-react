@@ -4,7 +4,7 @@ import {Col, Image, Row, Stack} from "react-bootstrap";
 import {BsDatabase, BsHeart, BsMap} from "react-icons/bs";
 import {Link} from "react-router-dom";
 
-const JobCard = ()=>{
+const JobCard = (props)=>{
     return(
         <>
             <Col xs={12} className="my-3">
@@ -25,7 +25,7 @@ const JobCard = ()=>{
                                 <Stack direction="horizontal" gap={3}>
                                     <div className="text-start">
                                         <Link to="jobs/1" className="text-decoration-none">
-                                            <h5>Creative Art Design</h5>
+                                            <h5>{props.title}</h5>
                                         </Link>
 
                                         <span>Premium Labels Limited</span>

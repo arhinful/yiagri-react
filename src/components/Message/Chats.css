@@ -1,0 +1,128 @@
+.item-container{
+    border-right: 1px solid #e8e8e8;
+    height: 100%;
+    max-width: 320px;
+}
+
+.heading{
+    width: 100%;
+}
+
+.search-input{
+    width: 300px !important;
+    height: 35px !important;
+    padding-left: 40px;
+    background: #eef3f8;
+    border: 2px solid #eef3f8;
+}
+
+.search-input:focus, .search-input:active, .search-input:hover{
+    background: #eef3f8;
+    border: 2px solid #7c7c7c;
+}
+
+.search-append-button{
+    border: none;
+    padding: 2px 10px 6px 10px;
+    border-radius: 50%;
+    position: relative;
+    right: 41px;
+    background: #eef3f8;
+}
+
+.input-group-prepend{
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+
+.icon-btn{
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-btn:hover, .search-append-button:hover{
+    background: #dedede;
+}
+
+.tab-button{
+    border: none;
+    padding: 9px 8px 11px;
+    border-bottom: 3px solid #ffffff;
+    background: #ffffff;
+    font-weight: 600;
+}
+
+.active-tab-button{
+    border-bottom: 3px solid #00624b;
+}
+
+.tab-button:active{
+    background: #dadada;
+}
+
+.chat-img{
+    border-radius: 50%;
+    height: 56px;
+}
+
+.chat-list-border-left{
+    border-left: 4px solid #00624b;
+}
+
+.chat-list:hover{
+    cursor: pointer;
+    background: #f1f1f1;
+}
+
+.chat-name{
+    font-weight: 400;
+    color: #7c7c7c;
+}
+
+.recent-message{
+    color: #7c7c7c;
+    font-size: 14px;
+    word-break: break-all;
+    max-width: 300px;
+}
+
+.border-b-border-t{
+    border-top: 1px solid;
+}
+
+.underline{
+    position: relative;
+    bottom: -26px;
+}
+
+.messages-container{
+    overflow: auto;
+    max-height: 64.5vh;
+}
+
+.no-message-img{
+    width: 200px;
+    height: 150px;
+}
+
+.no-message-yet{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.send-a-message-button{
+    border-radius: 1.6rem;
+    padding-left: 1.6rem!important;
+    padding-right: 1.6rem!important;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+.send-a-message-button:hover{
+    border: 3px solid gray;
+}

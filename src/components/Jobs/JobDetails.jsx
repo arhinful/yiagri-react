@@ -3,6 +3,7 @@ import {withCookies} from "react-cookie";
 import {Col, Row} from "react-bootstrap";
 import JobCard from "./JobCard";
 import RightSideWidget from "./RightSideWidget";
+import categories from "../../Models/categories";
 const JobDetails = (props)=>{
     return(
         <>
@@ -11,7 +12,7 @@ const JobDetails = (props)=>{
                 <Row>
                     <Col lg={8}>
                         <Row>
-                            <JobCard/>
+                            <JobCard title={categories[0].profession}/>
 
                             <Col xs={12} className="card-container mt-2">
                                 <h3>Whom we are looking for</h3>

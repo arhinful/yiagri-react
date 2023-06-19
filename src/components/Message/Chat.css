@@ -1,0 +1,151 @@
+.chat-items-container{
+    border-right: 1px solid #e8e8e8;
+    height: 100%;
+    max-width: 470px;
+}
+
+.chat-container{
+    overflow: auto;
+    max-height: 370px;
+}
+
+.header-name{
+    font-size: 13px;
+    font-weight: lighter;
+    color: #7c7c7c;
+    line-height: 5px;
+}
+
+.chat-image{
+    border-radius: 100%;
+    width: 72px;
+    height: 72px;
+}
+
+.profile-title{
+    font-size: 14.5px;
+}
+
+.chat-date{
+    color: #7c7c7c;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.user-chat-name{
+    color: black;
+}
+
+.user-chat-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.chat-time{
+    font-size: 12px;
+    color: #7c7c7c;
+}
+
+.message-checked{
+    font-size: 14px;
+    color: #7c7c7c;
+}
+
+.message-content-container{
+    color: #5b5b5b;
+    font-size: 14px;
+    position: relative;
+}
+
+.message-content-container:hover{
+    background-color: #eaeaea;
+}
+
+.message-content{
+    max-width: 300px;
+    word-break: break-all;
+}
+
+.justify{
+    justify-content: start;
+    align-items: start;
+}
+
+.icon-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 9px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #7c7c7c;
+}
+
+.icon-buttons:hover, .send-message-options:hover{
+    background: #dadada;
+    cursor: pointer;
+}
+
+.message-input-container{
+    border-top: 3px solid #006750;
+}
+
+.message-input{
+    border-radius: 10px;
+    border: none;
+    background: #f1efec;
+    resize: none;
+    width: 88%;
+    height: 100px;
+    font-size: 15px;
+}
+
+.message-input:active, .message-input:focus{
+    border: none;
+    outline: none;
+}
+
+.send-message-button{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #7c7c7c;
+}
+
+.send-message-options{
+    color: #7c7c7c;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    padding: 7px 9px;
+}
+
+.dropdown-button{
+    font-size: 40px;
+}
+
+.link-hover-underline-dark{
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+}
+
+.link-hover-underline-dark:hover{
+    text-decoration: underline;
+    color: #212121;
+}
+
+.link-hover-underline-blue{
+    text-decoration: none;
+    color: #212121;
+}
+
+.link-hover-underline-blue:hover{
+    text-decoration: underline;
+    color: #0744b7;
+}

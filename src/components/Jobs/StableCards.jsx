@@ -16,9 +16,9 @@ const StableCards = ()=>{
             <Row className="cards-container">
                 {headings.map((header)=>{
                     return(
-                        <Col className="card m-3 p-4 border-0 text-center">
+                        <Col key={header} className="card m-3 p-4 border-0 text-center">
                             <div>
-                                <h5>Searching</h5>
+                                <h5>{header}</h5>
                             </div>
                             <div style={{fontSize:15}}>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing.

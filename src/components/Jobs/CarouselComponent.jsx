@@ -1,6 +1,8 @@
 import "./CarouselComponent.css"
 import {withCookies} from "react-cookie";
 import {Button, Carousel, Col, Image, Row} from "react-bootstrap";
+import categories from "../../Models/categories";
+import cities from "../../Models/cities";
 
 const CarouselComponent = ()=>{
     return(
@@ -8,10 +10,10 @@ const CarouselComponent = ()=>{
             <Row className="mt-5">
                 <Col className="bg-dark p-3 m-2">
                     <div>
-                        <h5 className="text-white">Creative Designer</h5>
+                        <h5 className="text-white">{categories[0].profession}</h5>
                     </div>
                     <div>
-                        <h6 className="font-weight-bolder second-header">Los Angeles</h6>
+                        <h6 className="font-weight-bolder second-header">{cities[4]}</h6>
                     </div>
                     <div className="card-content">
                         <Row>
@@ -30,10 +32,10 @@ const CarouselComponent = ()=>{
                 </Col>
                 <Col className="bg-dark p-3 m-2">
                     <div>
-                        <h5 className="text-white">Creative Designer</h5>
+                        <h5 className="text-white">{categories[6].profession}</h5>
                     </div>
                     <div>
-                        <h6 className="font-weight-bolder second-header">Los Angeles</h6>
+                        <h6 className="font-weight-bolder second-header">{cities[6]}</h6>
                     </div>
                     <div className="card-content">
                         <Row>

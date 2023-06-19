@@ -1,6 +1,8 @@
 import "./SearchForm.css"
 import {withCookies} from "react-cookie";
 import {Button, Col, Form, Row} from "react-bootstrap";
+import categories from "../../Models/categories";
+import cities from "../../Models/cities";
 
 const SearchForm = ()=>{
     return(
@@ -17,11 +19,21 @@ const SearchForm = ()=>{
                         <Col>
                             <select className="form-control outline-none selected-area">
                                 <option selected>Select area</option>
+                                {
+                                    cities.map((city, index)=>(<option key={index}>{city}</option>))
+                                }
                             </select>
                         </Col>
                         <Col>
                             <select className="form-control all-categories outline-none">
-                                <option selected>All categories</option>
+                                <option selected>All Categories</option>
+                                {
+                                    categories.map((category, index)=>{
+                                        return (
+                                            <option key={category.field} >{category.profession}</option>
+                                        )
+                                    })
+                                }
                             </select>
                         </Col>
                         <Col>
