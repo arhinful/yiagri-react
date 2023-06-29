@@ -106,3 +106,12 @@
   font-weight: bold;
   color: #007A5E !important;
 }
+
+.left_link{
+  color: #7c7c7c;
+}
+
+.left_link:hover{
+  cursor: pointer;
+  background: #e7e7e7;
+}

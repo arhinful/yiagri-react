@@ -11,3 +11,6 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log('Server is up!');
 });
+
+
+// run server with: "node server.js" inside package.json

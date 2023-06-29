@@ -117,14 +117,15 @@ export class Network extends Component {
         <div className="upper_network__inputContainer">
           <div style={{ paddingBottom: "10px" }}>
             {this.state.waitFollowers.length < 1 ? (
-              <span
+              <div
                 style={{
                   fontWeight: "bold",
                   paddingLeft: "10px",
+                  width: 700
                 }}
               >
                 No pending Invitations
-              </span>
+              </div>
             ) : (
               <div style={{ display: "flex" }}>
                 <span

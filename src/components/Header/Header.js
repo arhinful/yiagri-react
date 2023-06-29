@@ -167,27 +167,47 @@ class Header extends Component {
                 This feature is dummy
               </ReactTooltip>
 
-              <NavList
-                className={
-                  window.location.pathname.slice(1) === "jobs"
-                      ? "active"
-                      : null
-                }
-              >
-                <Link
-                  to={"/jobs"}
-                  onClick={this.thisClicked}
+              {/*<NavList*/}
+              {/*  className={*/}
+              {/*    window.location.pathname.slice(1) === "jobs"*/}
+              {/*        ? "active"*/}
+              {/*        : null*/}
+              {/*  }*/}
+              {/*>*/}
+              {/*  <Link*/}
+              {/*    to={"/jobs"}*/}
+              {/*    onClick={this.thisClicked}*/}
+              {/*  >*/}
+              {/*    <img*/}
+              {/*      src="/images/nav-jobs.svg"*/}
+              {/*      alt=""*/}
+              {/*    />*/}
+              {/*    <span*/}
+              {/*    >*/}
+              {/*      Jobs*/}
+              {/*    </span>*/}
+              {/*  </Link>*/}
+              {/*</NavList>*/}
+
+              <Job>
+                <NavList
+                    className={
+                      window.location.pathname.slice(1) === "jobs"
+                          ? "active"
+                          : null
+                    }
                 >
-                  <img
-                    src="/images/nav-jobs.svg"
-                    alt=""
-                  />
-                  <span
-                  >
-                    Jobs
-                  </span>
-                </Link>
-              </NavList>
+                      <Link onClick={this.thisClicked} to={"/jobs"}>
+                        <img src="/images/nav-jobs.svg" alt="" />
+                        <span>Jobs</span>
+                      </Link>
+                </NavList>
+                <Consultancies>
+                  <Link to={"/consultancies"}>
+                    Consultancies
+                  </Link>
+                </Consultancies>
+              </Job>
 
               <NavList
               className={
@@ -232,6 +252,31 @@ class Header extends Component {
                   </span>
                 </Link>
               </NavList>
+
+              <NavList
+              // className={
+              //   window.location.pathname.slice(1) == "/#" ? "active" : null
+              // }
+              >
+                <Link
+                  data-tip
+                  data-for="registerTip"
+                  onClick={(event) => event.preventDefault()}
+                  to={"/"}
+                >
+                  <img
+                    src="/images/nav-book.svg"
+                    data-tip
+                    data-for="registerTip"
+                    alt=""
+                    style={{width:27, height: 27, color: "red"}}
+                  />
+                  <span data-tip data-for="registerTip">
+                    Knowledge Portal
+                  </span>
+                </Link>
+              </NavList>
+
               <User>
                 <NavList
                   className={
@@ -282,6 +327,7 @@ class Header extends Component {
                   </Link>
                 </SignOut>
               </User>
+
               <Work>
                 <Link to={"/"}>
                   <img
@@ -472,6 +518,54 @@ const User = styled(NavList)`
     }
   }
 `;
+
+
+
+
+
+
+
+const Consultancies = styled.div`
+  position: absolute;
+  top: 60px;
+  background: white;
+  border-radius: 0 0 5px 5px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition-duration: 167ms;
+  text-align: center;
+  display: none;
+`;
+
+const Job = styled(NavList)`
+  a > svg {
+    width: 24px;
+    border-radius: 50%;
+  }
+  a > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  &:hover {
+    ${Consultancies} {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+`;
+
+
+
+
+
+
 
 const Work = styled(User)`
   border-left: 1px solid rgba(0, 0, 0, 0.08);
