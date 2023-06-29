@@ -13,4 +13,4 @@ app.listen(port, () => {
 });
 
 
-// run server with: "node server.js" inside package.json
+// run server with: "node server.js" inside package.json | React: "react-scripts start"
